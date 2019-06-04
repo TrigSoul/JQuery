@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		Svečių registracijos knyga
+	</title>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script>
+	
+	$(document).ready(function(){
+	
+		$("#form").hide();
+	
+		
+		$ ( "#" ).click(function(){
+		
+			$ ( "#" ).show();
+		});
+	});
+	</script>
+</head>
+<h2 align="center"> Svečių registracijos knyga</h2>
+
+<body bgcolor="#D1C7C7">
+
+Vardas: <br>
+	<input type="text" id = "Vardas" style="width : 417px;"><br>
+
+Pavardė: <br>
+	<input type="text" id = "Pavardė" style="width : 417px;"><br>
+
+Lytis: <br>
+	<form>
+	<input type="radio" name="Lytis" value="Vyras"> Vyras<br>
+	<input type="radio" name="Lytis" value="Moteris"> Moteris<br>
+	<input type="radio" name="Lytis" value="Kita"> Kita
+	</form> 
+
+Telefono numeris: <br>
+	<input type="text" id = "Telefono numeris" style="width : 417px;"><br>
+
+Atvykimo data: <br>
+	<input type="text" id = "Atvykimo data" style="width : 417px;"><br>
+
+Išvykimo data: <br>
+	<input type="text" id = "Išvykimo data" style="width : 417px;"><br>
+
+<div style="padding-bottom: 18px;">Suaugusiųjų skaičius:</br>
+<input type="number" id="Suaugusiųjų skaičius" style="width : 417px;"><br>
+
+<div style="padding-bottom: 18px;">Vaikų skaičius:</br>
+<input type="number" id="Vaikų skaičius" style="width : 417px;"><br>
+
+Komentaras: <br>
+<textarea rows="4" cols="50">
+</textarea><br>
+
+<form action="/action_page.php">
+<input type="checkbox" id="Registracija" value="reg">Noriu užsiregistruoti<br><br>
+</form>
+
+<form action="/action_page.php">
+	<div class="container">
+	<label for="uname"><b>Prisijungimo vardas:</b><br></label>
+	<input type="text" placeholder="Vartotojo vardas" name="uname" required><br>
+
+	<label for="psw"><b>Slaptažodis:</b><br></label>
+	<input type="password" placeholder="Slaptažodis" name="psw" required><br><br>
+        
+	<button type="submit">Pateikti</button>
+	<label>
+
+</div>
+</body>
+</html>
